@@ -46,7 +46,7 @@ function showpage(pg) {
     outline: none;
     color: #fff;
         font-family: monospace;
-    background: #111;
+    background: #966096;
     cursor: pointer;
     position: relative;
     z-index: 0;
@@ -234,6 +234,10 @@ function showpage(pg) {
           await sleep(1000); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n [+] Trying to inject tweak to springboard...';
           await sleep(500); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n [+] Installing packeges for '+getIOSVersion();
           await sleep(2009)
+          document.getElementById("log").innerText = document.getElementById("log").innerText + '\n [#] current kern.version: Darwin Kernel Version 43.3.0: Fri Dec 1 05:58:05 PST 2023; root:xnu-10002.80.11~59/RELEASE_ARM64_T8110 '+getIOSVersion();
+          await sleep(3405)
+           document.getElementById("log").innerText = document.getElementById("log").innerText + '\n [+] Pkg "dpkg" virifed.';
+          await sleep(800);
           showpage("after");
           alrt()
         }
@@ -246,7 +250,7 @@ function showpage(pg) {
       MidNight
     </div>
     <div class="subtitle">
-      (Not) Semi-Jailbreak iOS 16 - 17.3
+      (Not) Semi-Jailbreak iOS 11 - 19.8.5
     </div>
     <label class="checkbox style-e">
   <input type="checkbox"/>
@@ -266,13 +270,16 @@ function showpage(pg) {
         [-] This midnight was a joke*
       </div>
       <div class="console__subtitle">
-        [#] Midnight v1.1 - (iOS 19.8.5 unsupported)
+        [#] Midnight v1.2 - (iOS 19.8.5 supported!)
       </div>
       <div class="console__subtitle">
         [#] Designed by @wannakrya & @knzooex
       </div>
       <div class="console__subtitle">
         [#] Used SigmaRa1n exploit
+      </div>
+      <div class="console__subtitle">
+        [#] SpringBoard tweaks injecting allow
       </div>
       <div class="console__subtitle" id="log">
         -------------------------------------------
